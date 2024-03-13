@@ -40,7 +40,7 @@ Brief is the new black, and this is what inspires the team at Scissor. In todayâ
 5. Form validation is essential.
 6. At least 2 unit tests and 3 component tests should be present in the codebase.
 
-   Submission Link: [AltSchool of Frontend Engineering v2 2nd Semester Exam Submission Link](https://www.figma.com/file/vRyjmY0LFZCaN7Zn4ACEiL/SOE%3A-Scissor-Solution?type=design&node-id=26-2&mode=design&t=6ZJdAQR5ru1VFOcm-0). 
+   Submission Link: [AltSchool of Frontend Engineering 3rd Semester Exam Submission Link] (https://docs.google.com/forms/d/e/1FAIpQLSeaXJwNPH_UWcclmdjNZyvxWK_n8YYeutLYeoXrb_aieGKEFQ/viewform). 
 
 
 ## Libraries Used
