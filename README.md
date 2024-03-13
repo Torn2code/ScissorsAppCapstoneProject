@@ -9,7 +9,7 @@
 - [Modality of Submission](#modality-of-submission)
 - [Libraries Used](#libraries-used)
 - [Page Interface Look](#page-interface-look)
-- [UrL Shortener Link](#urlshortner-link)
+- [UrL Shortener Live Link](#url-shortener-live-link)
 
 ## Description
 This repository contains my solution to the Frontend Third Semester Examination Project. The project is implemented using React and Typescript includes a Firebase Google Authentication and other features.
