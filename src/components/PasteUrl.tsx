@@ -93,7 +93,7 @@ function PasteUrl() {
             height="24"
             src="https://img.icons8.com/color/48/fantasy.png"
             alt="fantasy"
-            style={{ marginLeft: "3px" }}
+            style={{ marginLeft: "3px", marginBottom: "-10px" }}
           />
         </button>
       </div>

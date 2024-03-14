@@ -7,7 +7,9 @@ import PasteUrl from "./components/PasteUrl";
 import FaQ from "./components/FaQ";
 import GetLink from "./components/GetLink";
 import SignIn from "./Pages/SignIn";
-import SignUp from "./Pages/Signup"; 
+import SignUp from "./Pages/Signup";
+import Analytics from "./Pages/Analytics";
+import Qrcode from "./Pages/Qrcode";
 
 const RoutesComponent = () => {
   return (
@@ -16,7 +18,9 @@ const RoutesComponent = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} /> 
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/analytics" element={<Analytics />} />
+        <Route path="/qrcode" element={<Qrcode />} />
       </Routes>
       <Footer />
     </Router>

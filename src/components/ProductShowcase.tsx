@@ -1,6 +1,17 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function ProductShowcase() {
+  const navigateToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   useEffect(() => {
     const counters = [
       { id: "active-users", startValue: 1, endValue: 3, unit: "M" },
@@ -59,7 +70,9 @@ function ProductShowcase() {
       </div>
 
       <div className="sign-header">
-        <button className="Sign-bar">Sign Up</button>
+        <div className="Sign-bar">
+          <Link to="/signup">Sign Up</Link>
+        </div>
         <p className="learn-bar">Learn more</p>
       </div>
 
@@ -164,7 +177,11 @@ function ProductShowcase() {
               all of these is second to none.
             </p>
           </div>
-          <div className="why-bar">
+          <div
+            id="gradient-bar"
+            className="why-bar"
+            onClick={() => navigateToSection("gradient-bar")}
+          >
             <img
               className="icon-icon"
               width="48"
@@ -178,7 +195,11 @@ function ProductShowcase() {
               Shorten your URL at scale, URL redirects.
             </p>
           </div>
-          <div className="why-bar">
+          <div
+            id="gradient-bar"
+            className="why-bar"
+            onClick={() => navigateToSection("gradient-bar")}
+          >
             <img
               className="icon-icon"
               width="48"
@@ -197,32 +218,37 @@ function ProductShowcase() {
           <div className="gridd-style">
             <div></div>
             <div className="why-bar">
-              <img
-                className="icon-icon"
-                width="32"
-                height="32"
-                src="https://img.icons8.com/tiny-color/16/000000/qr-code.png"
-                alt="qr-code"
-              />
-              <p>QR Codes</p>
-              <p className="under-tab">
-                Generate QR codes to your business, events. Bring your audience
-                and customers to your doorstep with this scan and go solution.
-              </p>
+              <Link to="/qrcode">
+                <img
+                  className="icon-icon"
+                  width="32"
+                  height="32"
+                  src="https://img.icons8.com/tiny-color/16/000000/qr-code.png"
+                  alt="qr-code"
+                />
+                <p>QR Codes</p>
+                <p className="under-tab">
+                  Generate QR codes to your business, events. Bring your
+                  audience and customers to your doorstep with this scan and go
+                  solution.
+                </p>
+              </Link>
             </div>
             <div className="why-bar">
-              <img
-                className="icon-icon"
-                width="50"
-                height="50"
-                src="https://img.icons8.com/ios/50/000000/pulse--v2.png"
-                alt="pulse--v2"
-              />
-              <p>Data Analytics</p>
-              <p className="under-tab">
-                Receive data on the usage of either your shortened URL, custom
-                URLs or generated QR codes. Embedded to monitor progress.
-              </p>
+              <Link to="/analytics">
+                <img
+                  className="icon-icon"
+                  width="50"
+                  height="50"
+                  src="https://img.icons8.com/ios/50/000000/pulse--v2.png"
+                  alt="pulse--v2"
+                />
+                <p>Data Analytics</p>
+                <p className="under-tab">
+                  Receive data on the usage of either your shortened URL, custom
+                  URLs, or generated QR codes. Embedded to monitor progress.
+                </p>
+              </Link>
             </div>
           </div>
         </div>
