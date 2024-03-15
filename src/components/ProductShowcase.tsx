@@ -70,10 +70,16 @@ function ProductShowcase() {
       </div>
 
       <div className="sign-header">
+
         <div className="Sign-bar">
           <Link to="/signup">Sign Up</Link>
         </div>
+
+        <div className="Learn-move">
         <p className="learn-bar">Learn more</p>
+        </div>
+       
+
       </div>
 
       <div className="vector-box">

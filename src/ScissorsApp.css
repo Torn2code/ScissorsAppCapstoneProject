@@ -98,7 +98,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;}
+  padding: 10px 20px;
+}
 
 .My-bar,
 .head-list,
@@ -115,13 +116,16 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {  .head-bar {
-    flex-direction: column;
+@media screen and (max-width: 768px) {
+  .head-bar {
+    flex-direction: grid;
     align-items: stretch;
+    width: 400% !important;
   }
 
   .Sci-bar {
     margin-bottom: 150px;
+    width: 150px;
   }
 
   .Try-bar {
@@ -166,39 +170,36 @@
 }
 
 .sign-header {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  margin-top: 20px;
-  margin-right: 157px;
+  margin-right: 537px;
 }
 
 .Sign-bar a {
-  display: inline-block;
+  font-family: "Gilroy-Bold", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   cursor: pointer;
   margin-left: 340px;
   background: #0065fe;
-  color: white;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
+  color: white; width: 100%;
   height: 100%;
-  border: none;
-  padding: 10px;
-  margin-top: 15px;
-  border-radius: 25px;
-  transition: background-color 0.3s ease;
+  border: none; border-radius: 25px;
+  transition: background-color 0.3s ease;}
+
+.Sign-bar :hover {
+  color: #0065fe;
+  background-color: white;
 }
 
 .Sign-bar {
-  margin-top: 20px;
+  padding: 5px;
+  margin-right: 320px;
   width: 150px;
-  text-align: center;
-}
-
-.Sign-bar :hover {
-  background-color: #0049b7;
-}
+  text-align: center;}
 
 .learn-bar {
   height: 20px;
@@ -206,13 +207,9 @@
   font-size: 16px;
   line-height: 19px;
   color: rgba(0, 101, 254, 1);
-  display: inline-block;
-  margin-left: 55px;
-}
+  margin-left: 55px;}
 
-.vector-box {
-  border: 2px solid rgba(19, 99, 219, 0.5);
-
+.vector-box { border: 2px solid rgba(19, 99, 219, 0.5);
   height: 120px;
   padding: 75px;
   width: 355px;
@@ -558,7 +555,7 @@
   }
 
   .Pers-bar {
-    margin-right: 0;
+    margin-right: 150px !important;
     width: 90%;
     margin: 0 auto;
   }
@@ -566,7 +563,7 @@
   .sign-header {
     text-align: center;
     margin-top: 30px;
-    margin-right: 0;
+    margin-right: 495px !important;
   }
 
   .Vector-img {
@@ -578,7 +575,7 @@
   }
 
   .vector-box {
-    margin-left: 510px;
+    margin-left: 450px;
   }
 
   .cdn-icon {
@@ -631,7 +628,7 @@
   display: flex;
   justify-content: center;
   margin-top: 140px;
-  width: 90%;
+  width: 100%;
 }
 
 .line {
@@ -696,7 +693,8 @@
 }
 
 .Paste-div {
-  margin: 0 auto;}
+  margin: 0 auto;
+}
 
 .UrlPlace-bar {
   border-radius: 12px 10px !important;
@@ -705,7 +703,8 @@
   text-align: center;
   color: rgba(0, 101, 254, 1);
   border: 1px solid var(--primary-300-base, #1363db);
-  cursor: pointer }
+  cursor: pointer;
+}
 
 .UrlPlace-bar::placeholder {
   color: rgba(0, 101, 254, 1);
@@ -856,7 +855,8 @@ input[type="text"] {
   }
 }
 
-.FaQ {  margin-top: 20px;
+.FaQ {
+  margin-top: 20px;
   padding: 20px;
   cursor: pointer;
   font-family: "Gilroy-medium", sans-serif;
@@ -1143,19 +1143,22 @@ input[type="text"] {
   border-radius: 7px;
   border-color: #0065fe;
   height: 25px;
-  justify-content: center;}
+  justify-content: center;
+}
 
 .Cond-Up {
   color: #ccc;
   font-size: small;
   margin-right: 25px;
-  margin-top: -15px;}
+  margin-top: -15px;
+}
 
 .Cond-Up p {
   margin-bottom: -25px;
 }
 
-.Ald-Up {  font-family: "Gilroy-Bold", sans-serif;
+.Ald-Up {
+  font-family: "Gilroy-Bold", sans-serif;
 }
 
 .login-link {
@@ -1165,7 +1168,7 @@ input[type="text"] {
 
 .login-link:hover {
   text-decoration: underline;
-} 
+}
 
 .Sig-Up {
   border-radius: 19px;
@@ -1202,7 +1205,8 @@ input[type="text"] {
   margin-left: 400px;
 }
 
-.Terms-Up strong { color: #000;
+.Terms-Up strong {
+  color: #000;
 }
 
 @media screen and (max-width: 600px) {

@@ -181,7 +181,7 @@ const Signup = () => {
 
 
               <p className="Ald-Up">
-  Already have an account? <Link to="/sign-in" className="login-link">Log in</Link>
+  Already have an account? <Link to="/signin" className="login-link">Log in</Link>
 </p>
 <p className="Ter-Up">
 By signing up, you agree to
