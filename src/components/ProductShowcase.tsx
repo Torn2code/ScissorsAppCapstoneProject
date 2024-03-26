@@ -70,16 +70,13 @@ function ProductShowcase() {
       </div>
 
       <div className="sign-header">
-
         <div className="Sign-bar">
           <Link to="/signup">Sign Up</Link>
         </div>
 
         <div className="Learn-move">
-        <p className="learn-bar">Learn more</p>
+          <p className="learn-bar">Learn more</p>
         </div>
-       
-
       </div>
 
       <div className="vector-box">
@@ -150,6 +147,7 @@ function ProductShowcase() {
           </p>
           <p className="under-text">Active users</p>
         </div>
+
         <div className="Next-line">
           <p id="links-created" className="line-text">
             10M
@@ -172,10 +170,10 @@ function ProductShowcase() {
 
       <div id="container-grid" className="container-grid">
         <div className="grid-style">
-          <div className="why-bar">
+          <div className="whys-bar">
             <img src="Line 70.svg" alt="" />
             Why choose <span className="why-span">Scissors</span>
-            <p className="under-tab">
+            <p className="unders-tab">
               Scissors is the hub of everything that has to do with your link
               management. We shorten your URLs, allow you creating custom ones
               for your personal, business, event usage. Our swift QR code
@@ -270,12 +268,12 @@ function ProductShowcase() {
           </div>
           A <span className="Head-span">price perfect</span> for your needs.
         </h1>
-      </div>
 
-      <h2 className="pre-head">
-        From catering for your personal, business, event, socials needs, you can
-        be rest assured we have you in mind in our pricing.
-      </h2>
+        <h2 className="pre-head">
+          From catering for your personal, business, event, socials needs, you
+          can be rest assured we have you in mind in our pricing.
+        </h2>
+      </div>
 
       <div id="div-container" className="div-container">
         <div className="basic-bar">

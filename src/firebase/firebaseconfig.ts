@@ -5,6 +5,7 @@ import {
   GoogleAuthProvider,
   signInWithEmailAndPassword,
 } from "firebase/auth";
+ import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAflnaN3E8LiWnb8Q5qT8PNXz2bhuX8LHk",
@@ -13,6 +14,7 @@ const firebaseConfig = {
   storageBucket: "scissorshortener.appspot.com",
   messagingSenderId: "838128278810",
   appId: "1:838128278810:web:ff688766142d85e199e0a3",
+  measurementId: "G-BCBZ42HSGW"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -20,4 +22,4 @@ const app = initializeApp(firebaseConfig);
 const provider = new GoogleAuthProvider();
 const auth = getAuth();
 
-export { app, provider, auth, signInWithRedirect, signInWithEmailAndPassword };
+export { app, provider, auth, signInWithRedirect, signInWithEmailAndPassword, getAnalytics };

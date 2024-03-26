@@ -28,10 +28,14 @@ const RoutesComponent = () => {
 };
 
 const Home = () => {
+  const handleUrlShortened = (shortUrl: string) => {
+  
+  };
+
   return (
     <>
       <ProductShowcase />
-      <PasteUrl />
+      <PasteUrl onUrlShortened={handleUrlShortened} /> 
       <FaQ />
       <GetLink />
     </>
